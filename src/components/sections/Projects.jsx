@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import githubImg from "../../assets/github.svg";
 export const Projects = () => {
   return (
     <section
@@ -49,6 +50,20 @@ export const Projects = () => {
                 >
                   View Project
                 </a>
+                <div className="flex gap-3">
+                  <a
+                    href="https://github.com/jbantin/test-frontend"
+                    target="_blank"
+                  >
+                    <img className="w-8 pt-1" src={githubImg} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/jbantin/expressBackend"
+                    target="_blank"
+                  >
+                    <img className="w-8 pt-1" src={githubImg} alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -89,6 +104,13 @@ export const Projects = () => {
                   className="text-orange-400 hover:text-orange-300 transition-colors mt-4"
                 >
                   View Project
+                </a>
+
+                <a
+                  href="https://github.com/jbantin/sissiesWebpage"
+                  target="_blank"
+                >
+                  <img className="w-8 pt-1" src={githubImg} alt="" />
                 </a>
               </div>
             </div>
@@ -132,6 +154,12 @@ export const Projects = () => {
                   className="text-orange-400 hover:text-orange-300 transition-colors mt-4"
                 >
                   View Project
+                </a>
+                <a
+                  href="https://github.com/jbantin/multiplayer-proto"
+                  target="_blank"
+                >
+                  <img className="w-8 pt-1" src={githubImg} alt="" />
                 </a>
               </div>
             </div>
@@ -180,6 +208,12 @@ export const Projects = () => {
                 >
                   View Project
                 </a>
+                <a
+                  href="https://github.com/jbantin/knowYourPlace"
+                  target="_blank"
+                >
+                  <img className="w-8 pt-1" src={githubImg} alt="" />
+                </a>
               </div>
             </div>
           </motion.div>
@@ -219,6 +253,9 @@ export const Projects = () => {
                   className="text-orange-400 hover:text-orange-300 transition-colors mt-4"
                 >
                   View Project
+                </a>
+                <a href="https://github.com/k0miker/Vampire" target="_blank">
+                  <img className="w-8 pt-1" src={githubImg} alt="" />
                 </a>
               </div>
             </div>
