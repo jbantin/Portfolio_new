@@ -20,7 +20,7 @@ function App() {
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <motion.div
-          initial={{ transform: "translateY(-400px)", opacity: 0.1 }}
+          initial={{ transform: "translateY(-300px)", opacity: 0.1 }}
           whileInView={{
             opacity: 1,
             transform: "translateY(0px)",

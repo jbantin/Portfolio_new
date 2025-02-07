@@ -12,7 +12,7 @@ export const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <motion.div
             initial={{
-              transform: "translateX(-400px)",
+              transform: "translateX(-300px)",
               opacity: 0,
               scale: 0.5,
             }}
@@ -54,7 +54,7 @@ export const Projects = () => {
           </motion.div>
           <motion.div
             initial={{
-              transform: "translateX(400px)",
+              transform: "translateX(300px)",
               opacity: 0,
               scale: 0.5,
             }}
@@ -95,7 +95,7 @@ export const Projects = () => {
           </motion.div>
           <motion.div
             initial={{
-              transform: "translateX(-400px)",
+              transform: "translateX(-300px)",
               opacity: 0,
               scale: 0.5,
             }}
@@ -138,7 +138,7 @@ export const Projects = () => {
           </motion.div>
           <motion.div
             initial={{
-              transform: "translateX(400px)",
+              transform: "translateX(300px)",
               opacity: 0,
               scale: 0.5,
             }}
@@ -185,7 +185,7 @@ export const Projects = () => {
           </motion.div>
           <motion.div
             initial={{
-              transform: "translateX(-400px)",
+              transform: "translateX(-300px)",
               opacity: 0,
               scale: 0.5,
             }}
