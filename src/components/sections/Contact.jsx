@@ -40,7 +40,7 @@ export const Contact = () => {
         <form className="space-y-6" onSubmit={handleSubmit}>
           <motion.div
             initial={{
-              transform: "translateX(400px)",
+              transform: "translateX(300px)",
               opacity: 0,
               scale: 0.5,
             }}
@@ -68,7 +68,7 @@ export const Contact = () => {
           </motion.div>
           <motion.div
             initial={{
-              transform: "translateX(-400px)",
+              transform: "translateX(-300px)",
               opacity: 0,
               scale: 0.5,
             }}
@@ -96,7 +96,7 @@ export const Contact = () => {
           </motion.div>
           <motion.div
             initial={{
-              transform: "translateX(400px)",
+              transform: "translateX(300px)",
               opacity: 0,
               scale: 0.5,
             }}
@@ -124,7 +124,7 @@ export const Contact = () => {
           </motion.div>
           <motion.div
             initial={{
-              transform: "translateX(-400px)",
+              transform: "translateX(-300px)",
               opacity: 0,
               scale: 0.5,
             }}
