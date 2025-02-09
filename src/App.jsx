@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import "./App.css";
 
 import "./index.css";
+import "./fonts/PlayFair/PlayfairDisplay-Black.ttf";
 import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/Home";
