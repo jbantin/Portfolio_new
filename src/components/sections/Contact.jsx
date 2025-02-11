@@ -34,8 +34,8 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <div className="px-4 w-150">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-br from-orange-500 to-zinc-400 bg-clip-text text-transparent">
-          Get in Touch
+        <h2 className="text-4xl tracking-[-0.08em] font-black mb-8 bg-gradient-to-br from-orange-500 to-zinc-400 bg-clip-text text-transparent">
+          Contact
         </h2>
         <form className="space-y-6" onSubmit={handleSubmit}>
           <motion.div
