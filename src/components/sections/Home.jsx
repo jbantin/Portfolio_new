@@ -4,8 +4,8 @@ export const Home = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative"
     >
-      <div className="text-center z-10 px-4">
-        <h1 className="text-7xl md:text-8xl font-black tracking-[-0.08em] mb-6 bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text text-transparent leading-right">
+      <div className="text-center z-10 px-4 ">
+        <h1 className=" text-7xl md:text-8xl font-black tracking-[-0.08em] mb-6 bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text text-transparent leading-right">
            jbantin.dev
         </h1>
         <p className="text-gray-300 text-lg mb-8 max-w-lg mx-auto">

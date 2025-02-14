@@ -1,15 +1,17 @@
 import { useEffect } from "react";
+import ScrollText from "./ScrollText";
 
-export function Navbar({ menuOpen, setMenuOpen }) {
+export function Navbar({ menuOpen, setMenuOpen ,scroll}) {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
+  
   return (
     <nav className=" fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-[Black] text-xl font-bold text-white">
-            jbantin<span className="text-orange-500">_webDevelopment</span>
+            <ScrollText scroll={scroll}/>
           </a>
           <div
             className="w-7 h-5 relative cursor-pointer z-40 md:hidden"

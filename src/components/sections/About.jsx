@@ -1,6 +1,8 @@
-import { motion } from "motion/react";
-
+import { motion, useScroll, useTransform } from "motion/react";
+import { useEffect, useRef, useState } from "react";
+import Lenis from "lenis";
 export const About = () => {
+  
   const frontendSkills = [
     "HTML",
     "CSS",
@@ -16,8 +18,9 @@ export const About = () => {
     "MongoDB/Mongoose",
     "PostgreSQL",
   ];
+  
   return (
-    <section
+    <section 
       id="about"
       className="min-h-screen flex items-center justify-center py-20"
     >
