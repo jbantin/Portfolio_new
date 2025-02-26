@@ -1,7 +1,6 @@
 import Lenis from "lenis";
 import { useEffect } from "react";
-import { motion } from 'motion/react'
-
+import { motion } from "motion/react";
 
 const ScrollText = ({ scroll }) => {
   useEffect(() => {
@@ -13,25 +12,43 @@ const ScrollText = ({ scroll }) => {
     }
 
     requestAnimationFrame(raf);
-  }, [scroll])
-
+  }, [scroll]);
 
   return (
-    <div className="overflow-hidden w-[218px]">
+    <div className="overflow-hidden w-[268px]">
       <motion.div className="flex" style={{ x: scroll }}>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
-        <p>jbantin<span className="text-orange-500">_webDevelopment_</span></p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
+        <p>
+          jbantin<span className="text-orange-500">_webDevelopment_</span>
+        </p>
       </motion.div>
     </div>
-
-  )
-}
-export default ScrollText
+  );
+};
+export default ScrollText;
