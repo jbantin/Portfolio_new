@@ -2,7 +2,6 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
 export const About = () => {
-  
   const frontendSkills = [
     "HTML",
     "CSS",
@@ -18,9 +17,9 @@ export const About = () => {
     "MongoDB/Mongoose",
     "PostgreSQL",
   ];
-  
+
   return (
-    <section 
+    <section
       id="about"
       className="min-h-screen flex items-center justify-center py-20"
     >
@@ -29,15 +28,15 @@ export const About = () => {
           About Me
         </h2>
         <motion.div
-          initial={{ scale: 0.1, opacity: 0.1 }}
+          initial={{ opacity: 0.1 }}
           whileInView={{
             opacity: 1,
-            scale: 1,
+
             transition: { duration: 1 },
           }}
         >
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-          <h3 className="text-xl font-bold mb-4">Skills</h3>
+            <h3 className="text-xl font-bold mb-4">Skills</h3>
             <p className="text-gray-300 mb-6">
               I am about to complete an intensive training program at DCI and
               continuously expand my skills in various programming languages and
@@ -51,7 +50,7 @@ export const About = () => {
                     <span
                       key={index}
                       className="bg-blue-500/10 text-orange-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition "
+                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition "
                     >
                       {tech}
                     </span>
