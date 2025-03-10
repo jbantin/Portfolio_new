@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const PARTS = 40;
+const PARTS = 13;
 
 const Stars = () => {
   const canvasRef = useRef(null);
@@ -63,7 +63,7 @@ const Stars = () => {
     };
   }, []);
   return (
-    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#060606] font-bold text-4xl z-[-1]">
+    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#0a0a0a] font-bold text-4xl z-[-1]">
       <canvas ref={canvasRef}></canvas>
     </div>
   );
@@ -129,8 +129,8 @@ function initDisplayParts(canvas) {
 function drawRects(displayParts, ctx, canvas) {
   ctx.fillStyle = "black";
   displayParts.forEach((display) => {
-    display.dx = display.dx * 0.99;
-    display.dy = display.dy * 0.99;
+    display.dx = display.dx * 0.991;
+    display.dy = display.dy * 0.991;
     ctx.beginPath();
 
     ctx.fillRect(
