@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const PARTS = 5;
+const PARTS = 40;
 
 const Stars = () => {
   const canvasRef = useRef(null);
