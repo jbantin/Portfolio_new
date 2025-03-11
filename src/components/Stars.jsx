@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const PARTS = 13;
+const PARTS = 7;
 
 const Stars = () => {
   const canvasRef = useRef(null);
@@ -63,7 +63,7 @@ const Stars = () => {
     };
   }, []);
   return (
-    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#2f2f2f] font-bold text-4xl z-[-1]">
+    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#ffffff] font-bold text-4xl z-[-1]">
       <canvas ref={canvasRef}></canvas>
     </div>
   );

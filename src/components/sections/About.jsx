@@ -28,10 +28,10 @@ export const About = () => {
           About Me
         </h2>
         <motion.div
-          initial={{ opacity: 0.1 }}
+          initial={{ scale: 0.1, opacity: 0.1 }}
           whileInView={{
             opacity: 1,
-
+            scale: 1,
             transition: { duration: 1 },
           }}
         >
