@@ -31,7 +31,7 @@ function App() {
         className={`min-h-screen transition-opacity duration-700 bg-transparent text-gray-100 overflow-hidden`}
       >
         {/* <Background /> */}
-        <Stars />
+        <Stars scroll={x} />
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} scroll={x} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <motion.div

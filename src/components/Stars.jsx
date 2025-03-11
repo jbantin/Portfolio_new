@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const PARTS = 7;
+const PARTS = 5;
 
 const Stars = () => {
   const canvasRef = useRef(null);
@@ -14,6 +14,21 @@ const Stars = () => {
 
     const starArray = initStars(canvas);
     const displayParts = initDisplayParts(canvas);
+
+    let yPos = 0;
+    const handleScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+      const dy = scrollY - yPos;
+      console.log(dy);
+      yPos = scrollY;
+
+      displayParts.forEach((part) => {
+        part.dx = part.dx - (Math.floor(Math.random() * dy * 6) - dy * 3);
+        part.dy = part.dy - (Math.floor(Math.random() * dy * 10) - dy * 3);
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -50,8 +65,8 @@ const Stars = () => {
     const handleResize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      starArray.length = 0; // Clear the array
-      starArray.push(...initStars(canvas)); // Add new stars
+      // starArray.length = 0; // Clear the array
+      // starArray.push(...initStars(canvas)); // Add new stars
       displayParts.length = 0;
       displayParts.push(...initDisplayParts(canvas));
     };
@@ -63,7 +78,7 @@ const Stars = () => {
     };
   }, []);
   return (
-    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#101010] font-bold text-4xl z-[-1]">
+    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#000000] font-bold text-4xl z-[-1]">
       <canvas ref={canvasRef}></canvas>
     </div>
   );
@@ -117,8 +132,8 @@ function initDisplayParts(canvas) {
       displayParts.push({
         x: (x * canvas.width) / PARTS,
         y: (y * canvas.height) / PARTS,
-        dx: Math.floor(Math.random() * 1600) - 800,
-        dy: Math.floor(Math.random() * 1600) - 800,
+        dx: 0,
+        dy: 0,
       });
     }
   }
@@ -129,8 +144,8 @@ function initDisplayParts(canvas) {
 function drawRects(displayParts, ctx, canvas) {
   ctx.fillStyle = "black";
   displayParts.forEach((display) => {
-    display.dx = display.dx * 0.991;
-    display.dy = display.dy * 0.991;
+    display.dx = display.dx * 0.98;
+    display.dy = display.dy * 0.98;
     ctx.beginPath();
 
     ctx.fillRect(
