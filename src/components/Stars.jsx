@@ -63,7 +63,7 @@ const Stars = () => {
     };
   }, []);
   return (
-    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#0a0a0a] font-bold text-4xl z-[-1]">
+    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#2f2f2f] font-bold text-4xl z-[-1]">
       <canvas ref={canvasRef}></canvas>
     </div>
   );
