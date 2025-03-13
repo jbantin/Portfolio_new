@@ -16,7 +16,7 @@ const Stars = () => {
     const starArray = [];
     const displayParts = initDisplayParts(canvas);
 
-    let delay = 60;
+    let delay = 30;
 
     let yPos = 0;
     const handleScroll = () => {
@@ -25,8 +25,8 @@ const Stars = () => {
       yPos = scrollY;
 
       displayParts.forEach((part) => {
-        part.dx = part.dx - (Math.floor(Math.random() * dy * 6) - dy * 3);
-        part.dy = part.dy - (Math.floor(Math.random() * dy * 10) - dy * 3);
+        part.dx = part.dx - (Math.floor(Math.random() * dy * 4) - dy * 2);
+        part.dy = part.dy - (Math.floor(Math.random() * dy * 7) - dy * 2);
       });
     };
 
@@ -83,29 +83,13 @@ const Stars = () => {
     };
   }, []);
   return (
-    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#080808] font-bold text-4xl z-[-1]">
+    <div className="fixed w-[100vw] h-[100vh] text-white bg-[#000000] font-bold text-4xl z-[-1]">
       <canvas ref={canvasRef}></canvas>
     </div>
   );
 };
 export default Stars;
 
-// function initStars(canvas) {
-//   const starArray = [];
-//   for (let i = 0; i < 200; i++) {
-//     const dx = Math.random() * 6 - 3;
-//     const dy = Math.random() * 6 - 3;
-//     const v = Math.random() * 255;
-//     starArray.push({
-//       x: v * dx + canvas.width / 2,
-//       y: v * dy + canvas.height / 2,
-//       z: v,
-//       dx,
-//       dy,
-//     });
-//   }
-//   return starArray;
-// }
 function spawnStars(starArray, canvas) {
   const x = Math.random() * canvas.width;
   const y = canvas.height / 2;
@@ -117,12 +101,6 @@ function spawnStars(starArray, canvas) {
     starArray.push({ x, y, dx, dy, z });
   }
 }
-// function resetStar(star, canvas) {
-//   star.x = canvas.width / 2;
-//   star.y = canvas.height / 2;
-//   star.z = 0;
-//   return star;
-// }
 
 function drawStar(star, ctx, canvas, displayParts) {
   // Calculate the index based on star position

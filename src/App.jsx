@@ -26,7 +26,7 @@ function App() {
     <>
       <div
         ref={container}
-        className={`min-h-screen transition-opacity duration-700 bg-transparent text-gray-100 overflow-hidden`}
+        className={`scroll-smooth  min-h-screen transition-opacity duration-700 bg-transparent text-gray-100 overflow-hidden`}
       >
         {/* <Background /> */}
         <Stars scroll={x} />
