@@ -9,7 +9,7 @@ export const About = () => {
     "React",
     "TypeScript",
     "Astro",
-    "Next.js",
+    "Next.js", "Vue.js"
   ];
   const backendSkills = [
     "Node.js",

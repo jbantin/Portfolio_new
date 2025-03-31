@@ -83,12 +83,12 @@ export const Projects = () => {
             }}
           >
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-orange-500/10 hover:shadow-[0_2px_8px_rgba(255, 153, 0, 0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Askohmat</h3>
+              <h3 className="text-xl font-bold mb-2">Vue_Cocktail_Search</h3>
               <p className="text-gray-400 mb-4">
-                Login/Signin Project with Email verification and private chatbot
+                Little VueJs Project
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "TypeScript", "Tailwind", "Node.js", "MongoDB"].map(
+                {["Vue.js"].map(
                   (tech, key) => (
                     <span
                       key={key}
@@ -102,7 +102,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="https://askohmat.vercel.app/"
+                  href="https://vue-js-drink-search.vercel.app/"
                   target="_blank"
                   className="text-orange-400 hover:text-orange-300 transition-colors mt-4"
                 >
@@ -110,13 +110,7 @@ export const Projects = () => {
                 </a>
                 <div className="flex gap-3">
                   <a
-                    href="https://github.com/jbantin/test-frontend"
-                    target="_blank"
-                  >
-                    <img className="w-8 pt-1" src={githubImg} alt="" />
-                  </a>
-                  <a
-                    href="https://github.com/jbantin/expressBackend"
+                    href="https://github.com/jbantin/VueJsDrinks"
                     target="_blank"
                   >
                     <img className="w-8 pt-1" src={githubImg} alt="" />
@@ -317,6 +311,62 @@ export const Projects = () => {
                 <a href="https://github.com/k0miker/Vampire" target="_blank">
                   <img className="w-8 pt-1" src={githubImg} alt="" />
                 </a>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{
+              transform: "translateX(-300px)",
+              opacity: 0,
+              scale: 0.5,
+            }}
+            whileInView={{
+              transform: "translateX(0px)",
+              opacity: 1,
+              scale: 1,
+              transition: { duration: 1.2 },
+            }}
+          >
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-orange-500/10 hover:shadow-[0_2px_8px_rgba(255, 153, 0, 0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">Askohmat</h3>
+              <p className="text-gray-400 mb-4">
+                Login/Signin Project with Email verification and private chatbot
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["React", "TypeScript", "Tailwind", "Node.js", "MongoDB"].map(
+                  (tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-orange-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition "
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://askohmat.vercel.app/"
+                  target="_blank"
+                  className="text-orange-400 hover:text-orange-300 transition-colors mt-4"
+                >
+                  View Project
+                </a>
+                <div className="flex gap-3">
+                  <a
+                    href="https://github.com/jbantin/test-frontend"
+                    target="_blank"
+                  >
+                    <img className="w-8 pt-1" src={githubImg} alt="" />
+                  </a>
+                  <a
+                    href="https://github.com/jbantin/expressBackend"
+                    target="_blank"
+                  >
+                    <img className="w-8 pt-1" src={githubImg} alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
