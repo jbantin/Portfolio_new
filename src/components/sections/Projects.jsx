@@ -85,7 +85,7 @@ export const Projects = () => {
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-orange-500/10 hover:shadow-[0_2px_8px_rgba(255, 153, 0, 0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Vue_Cocktail_Search</h3>
               <p className="text-gray-400 mb-4">
-                Little VueJs Project
+                Little VueJs Project<br />(thecocktaildb api)
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["Vue.js"].map(
