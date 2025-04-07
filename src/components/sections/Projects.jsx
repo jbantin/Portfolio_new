@@ -11,11 +11,10 @@ export const Projects = () => {
     >
       <div className="max-w-5xl mx-auto px-4">
         <h2
-          className={`text-4xl tracking-[-0.08em] font-black mb-8 ${
-            isDarkMode
-              ? "bg-gradient-to-br from-orange-500 to-zinc-400 bg-clip-text text-transparent"
-              : "text-orange-600"
-          }`}
+          className={`text-4xl tracking-[-0.08em] font-black mb-8 ${isDarkMode
+            ? "bg-gradient-to-br from-orange-500 to-zinc-400 bg-clip-text text-transparent"
+            : "text-orange-600"
+            }`}
         >
           Featured Projects
         </h2>
@@ -34,17 +33,15 @@ export const Projects = () => {
             }}
           >
             <div
-              className={`p-6 rounded-xl ${
-                isDarkMode
-                  ? "border-white/10 border"
-                  : "border-gray-300/50 border"
-              } hover:-translate-y-1 transition-all`}
+              className={`p-6 rounded-xl ${isDarkMode
+                ? "border-white/10 border"
+                : "border-gray-300/50 border"
+                } hover:-translate-y-1 transition-all`}
             >
               <h3 className="text-xl font-bold mb-2">BrokeChain</h3>
               <p
-                className={`${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                } mb-4`}
+                className={`${isDarkMode ? "text-gray-400" : "text-gray-600"
+                  } mb-4`}
               >
                 Trading demo app for crypto currencies.
                 <br />
@@ -102,20 +99,18 @@ export const Projects = () => {
             }}
           >
             <div
-              className={`p-6 rounded-xl ${
-                isDarkMode
-                  ? "border-white/10 border"
-                  : "border-gray-300/50 border"
-              } hover:-translate-y-1 transition-all`}
+              className={`p-6 rounded-xl ${isDarkMode
+                ? "border-white/10 border"
+                : "border-gray-300/50 border"
+                } hover:-translate-y-1 transition-all`}
             >
-              <h3 className="text-xl font-bold mb-2">Askohmat</h3>
+              <h3 className="text-xl font-bold mb-2">Cocktail Recipes</h3>
               <p
-                className={`${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                } mb-4`}
+                className={`${isDarkMode ? "text-gray-400" : "text-gray-600"
+                  } mb-4`}
               >
-                Login/Signin Project with Email verification and private chatbot
-              </p>
+                First project in vue.js <br />
+                (thecocktaildb api)</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["Vue.js"].map((tech, key) => (
                   <span
@@ -160,17 +155,15 @@ export const Projects = () => {
             }}
           >
             <div
-              className={`p-6 rounded-xl ${
-                isDarkMode
-                  ? "border-white/10 border"
-                  : "border-gray-300/50 border"
-              } hover:-translate-y-1 transition-all`}
+              className={`p-6 rounded-xl ${isDarkMode
+                ? "border-white/10 border"
+                : "border-gray-300/50 border"
+                } hover:-translate-y-1 transition-all`}
             >
               <h3 className="text-xl font-bold mb-2">Sissies Band</h3>
               <p
-                className={`${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                } mb-4`}
+                className={`${isDarkMode ? "text-gray-400" : "text-gray-600"
+                  } mb-4`}
               >
                 Project 'Band Webpage' HTML/CSS/Astro/Tailwind and a few lines
                 of JavaScript
@@ -220,19 +213,17 @@ export const Projects = () => {
             }}
           >
             <div
-              className={`p-6 rounded-xl ${
-                isDarkMode
-                  ? "border-white/10 border"
-                  : "border-gray-300/50 border"
-              } hover:-translate-y-1 transition-all`}
+              className={`p-6 rounded-xl ${isDarkMode
+                ? "border-white/10 border"
+                : "border-gray-300/50 border"
+                } hover:-translate-y-1 transition-all`}
             >
               <h3 className="text-xl font-bold mb-2">
                 Multiplayer (wasd/mouse)
               </h3>
               <p
-                className={`${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                } mb-4`}
+                className={`${isDarkMode ? "text-gray-400" : "text-gray-600"
+                  } mb-4`}
               >
                 Multiplayer top down shooter prototype with socket io in
                 JavaScript
@@ -279,17 +270,15 @@ export const Projects = () => {
             }}
           >
             <div
-              className={`p-6 rounded-xl ${
-                isDarkMode
-                  ? "border-white/10 border"
-                  : "border-gray-300/50 border"
-              } hover:-translate-y-1 transition-all`}
+              className={`p-6 rounded-xl ${isDarkMode
+                ? "border-white/10 border"
+                : "border-gray-300/50 border"
+                } hover:-translate-y-1 transition-all`}
             >
               <h3 className="text-xl font-bold mb-2">Know Your Place</h3>
               <p
-                className={`${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                } mb-4`}
+                className={`${isDarkMode ? "text-gray-400" : "text-gray-600"
+                  } mb-4`}
               >
                 Weather/Map App and AI-info project
               </p>
@@ -342,17 +331,15 @@ export const Projects = () => {
             }}
           >
             <div
-              className={`p-6 rounded-xl ${
-                isDarkMode
-                  ? "border-white/10 border"
-                  : "border-gray-300/50 border"
-              } hover:-translate-y-1 transition-all`}
+              className={`p-6 rounded-xl ${isDarkMode
+                ? "border-white/10 border"
+                : "border-gray-300/50 border"
+                } hover:-translate-y-1 transition-all`}
             >
               <h3 className="text-xl font-bold mb-2">Zombie-Island</h3>
               <p
-                className={`${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                } mb-4`}
+                className={`${isDarkMode ? "text-gray-400" : "text-gray-600"
+                  } mb-4`}
               >
                 Game Project on canvas without libraries with my classmate Colin
               </p>

@@ -7,14 +7,14 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className="p-2 mx-1 rounded-full bg-orange-500/20 hover:bg-orange-500/30 transition-colors"
+      className="p-2 mx-3 rounded-full bg-orange-500/20 hover:bg-orange-500/30 transition-colors"
       aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
     >
       <motion.div
         initial={{ rotate: 0 }}
         animate={{ rotate: isDarkMode ? 0 : 180 }}
         transition={{ duration: 0.5 }}
-        className="w-3 h-3 flex items-center justify-center"
+        className="w-5 h-5 flex items-center justify-center"
       >
         {isDarkMode ? (
           <svg

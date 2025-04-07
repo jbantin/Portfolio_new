@@ -15,7 +15,7 @@ const ScrollText = ({ scroll }) => {
   }, [scroll]);
 
   return (
-    <div className="overflow-hidden w-[200px]  md:w-[268px]">
+    <div className="overflow-hidden w-[200px]  w-[226px]">
       <motion.div className="flex" style={{ x: scroll }}>
         <p>
           jbantin<span className="text-orange-500">_webDevelopment_</span>
