@@ -7,10 +7,10 @@ export function Navbar({ menuOpen, setMenuOpen, scroll }) {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-40 py-4 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-40 py-4 transition-all duration-300 border-b ${
         isDarkMode
-          ? "backdrop-blur-md bg-black/30"
-          : "backdrop-blur-md bg-white/30"
+          ? "backdrop-blur-md bg-black/30 border-white/10"
+          : "backdrop-blur-md bg-white/30 border-black/10"
       }`}
     >
       <div className="max-w-5xl mx-auto ">
