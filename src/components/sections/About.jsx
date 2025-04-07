@@ -1,7 +1,10 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
+import { useTheme } from "../../context/ThemeContext";
+
 export const About = () => {
+  const { isDarkMode } = useTheme();
   const frontendSkills = [
     "HTML",
     "CSS",
@@ -24,7 +27,13 @@ export const About = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-4xl tracking-[-0.08em] font-black mb-8 bg-gradient-to-br from-orange-500 to-zinc-500 bg-clip-text text-transparent">
+        <h2
+          className={`text-4xl tracking-[-0.08em] font-black mb-8 ${
+            isDarkMode
+              ? "bg-gradient-to-br from-orange-500 to-zinc-500 bg-clip-text text-transparent"
+              : "text-orange-600"
+          }`}
+        >
           About Me
         </h2>
         <motion.div
@@ -35,9 +44,19 @@ export const About = () => {
             transition: { duration: 1 },
           }}
         >
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+          <div
+            className={`p-6 rounded-xl ${
+              isDarkMode
+                ? "border-white/10 border"
+                : "border-gray-300/50 border"
+            } hover:-translate-y-1 transition-all`}
+          >
             <h3 className="text-xl font-bold mb-4">Skills</h3>
-            <p className="text-gray-300 mb-6">
+            <p
+              className={`${
+                isDarkMode ? "text-gray-300" : "text-gray-600"
+              } mb-6`}
+            >
               I am about to complete an intensive training program at DCI and
               continuously expand my skills in various programming languages and
               technologies.
@@ -83,10 +102,20 @@ export const About = () => {
           }}
         >
           <div className="grid grid-cols-1  gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div
+              className={`p-6 rounded-xl ${
+                isDarkMode
+                  ? "border-white/10 border"
+                  : "border-gray-300/50 border"
+              } hover:-translate-y-1 transition-all`}
+            >
               <h3 className="text-xl font-bold mb-4">Education</h3>
 
-              <ul className="  text-gray-300 space-y-2 ">
+              <ul
+                className={`${
+                  isDarkMode ? "text-gray-300" : "text-gray-600"
+                } space-y-2`}
+              >
                 <li>
                   <strong>Full Stack Web Developer </strong> - Digital Career
                   Institute

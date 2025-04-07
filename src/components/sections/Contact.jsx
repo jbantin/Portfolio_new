@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-
 import emailjs from "emailjs-com";
+import { useTheme } from "../../context/ThemeContext";
 export const Contact = () => {
+  const { isDarkMode } = useTheme();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -58,7 +59,11 @@ export const Contact = () => {
                 id="name"
                 name="name"
                 required
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-orange-400 focus:bg-blue-500/5"
+                className={`w-full rounded px-4 py-3 transition focus:outline-none focus:border-orange-400 ${
+                  isDarkMode
+                    ? "bg-white/5 border border-white/10 text-white focus:bg-blue-500/5"
+                    : "bg-white/90 border border-gray-300 text-gray-800 focus:bg-orange-50"
+                }`}
                 placeholder="Name..."
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
@@ -86,7 +91,11 @@ export const Contact = () => {
                 id="email"
                 name="email"
                 required
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-orange-400 focus:bg-blue-500/5"
+                className={`w-full rounded px-4 py-3 transition focus:outline-none focus:border-orange-400 ${
+                  isDarkMode
+                    ? "bg-white/5 border border-white/10 text-white focus:bg-blue-500/5"
+                    : "bg-white/90 border border-gray-300 text-gray-800 focus:bg-orange-50"
+                }`}
                 placeholder="Email..."
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
@@ -114,7 +123,11 @@ export const Contact = () => {
                 name="message"
                 required
                 rows={5}
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-orange-400 focus:bg-blue-500/5"
+                className={`w-full rounded px-4 py-3 transition focus:outline-none focus:border-orange-400 ${
+                  isDarkMode
+                    ? "bg-white/5 border border-white/10 text-white focus:bg-blue-500/5"
+                    : "bg-white/90 border border-gray-300 text-gray-800 focus:bg-orange-50"
+                }`}
                 placeholder="Your Message..."
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })

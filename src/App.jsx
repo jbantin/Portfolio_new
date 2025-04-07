@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import "./App.css";
-
+import { useTheme } from "./context/ThemeContext";
 import "./index.css";
 import "./fonts/PlayFair/PlayfairDisplay-Black.ttf";
 import { Navbar } from "./components/Navbar";
@@ -13,6 +13,7 @@ import { Contact } from "./components/sections/Contact";
 import Stars from "./components/Stars";
 
 function App() {
+  const { isDarkMode } = useTheme();
   const container = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -26,10 +27,11 @@ function App() {
     <>
       <div
         ref={container}
-        className={`scroll-smooth  min-h-screen transition-opacity duration-700 bg-transparent text-gray-100 overflow-hidden`}
+        className={`scroll-smooth min-h-screen transition-all duration-700 
+        ${isDarkMode ? " text-gray-100" : " text-gray-900"} 
+        overflow-hidden`}
       >
-        {/* <Background /> */}
-        <Stars scroll={x} />
+        <Stars scroll={x} darkMode={isDarkMode} />
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} scroll={x} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <motion.div
