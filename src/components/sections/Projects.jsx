@@ -28,13 +28,14 @@ export const Projects = () => {
                 initial={{
                   transform:
                     index % 2 === 0
-                      ? `translateX(${Math.random() * -500}px)`
-                      : `translateX(${Math.random() * 500}px)`,
+                      ? `translateX(${Math.random() * -300}px)`
+                      : `translateX(${Math.random() * 300}px)`,
                   opacity: 0,
                   scale: 0.5,
                 }}
                 whileInView={{
                   transform: "translateX(0px)",
+
                   opacity: 1,
                   scale: 1,
                   transition: { duration: 1.2 },

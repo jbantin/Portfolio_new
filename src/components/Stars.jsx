@@ -149,14 +149,14 @@ function drawStar(star, ctx, canvas, displayParts, isDarkMode) {
     ctx.rect(
       star.x + displayParts[index].dx,
       star.y + displayParts[index].dy,
-      2, // Bigger stars
+      2,
       2
     );
 
     // Use fillStyle and fill for better visibility
     ctx.fillStyle = isDarkMode
-      ? `rgba(255, 255, 255, ${star.z / 255})`
-      : `rgba(0, 0, 0, ${star.z / 255})`;
+      ? `rgba(190,190,190, ${star.z / 255})`
+      : `rgba(65, 65, 65, ${star.z / 255})`;
     ctx.fill();
   }
 }
