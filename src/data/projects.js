@@ -7,7 +7,10 @@ export const projects = [
       "(Final Project DCI in progress)",
     ],
     link: "https://broke.dev-space.vip",
-    gitLink: [],
+    gitLink: [
+      "https://github.com/jbantin/BrokeChain",
+      "https://github.com/jbantin/broke-end",
+    ],
   },
   {
     head: "Cocktail Recipes",
