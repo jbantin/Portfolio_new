@@ -12,13 +12,16 @@ export const About = () => {
     "React",
     "TypeScript",
     "Astro",
-    "Next.js", "Vue.js"
+    "Next.js",
+    "Vue.js",
   ];
   const backendSkills = [
     "Node.js",
     "Express.js",
     "MongoDB/Mongoose",
     "PostgreSQL",
+    "PHP",
+    "Laravel",
   ];
 
   return (
