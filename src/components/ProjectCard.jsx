@@ -30,13 +30,17 @@ const ProjectCard = (project) => {
         ))}
       </div>
       <div className="flex justify-between items-center">
-        <a
-          href={link}
-          target="_blank"
-          className="text-orange-400 hover:text-orange-300 transition-colors mt-4"
-        >
-          View Project
-        </a>
+        {link ? (
+          <a
+            href={link}
+            target="_blank"
+            className="text-orange-400 hover:text-orange-300 transition-colors mt-4"
+          >
+            View Project
+          </a>
+        ) : (
+          <span className="text-gray-400 mt-4">deployment in progress</span>
+        )}
         <div className="flex gap-3">
           {gitLink.map((link, index) => (
             <a key={index} href={link} target="_blank">
