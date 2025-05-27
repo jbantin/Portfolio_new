@@ -1,10 +1,9 @@
 export const projects = [
   {
     head: "Laranban 0.1",
-    techs: ["PHP", "Laravel", "Tailwind", "SQLite"],
+    techs: ["PHP", "Laravel", "Tailwind", "SQLite", "Docker"],
     description: ["First laravel project.", "Kanban Todo List."],
-    link: "",
-    // link: "https://laravel.jbantin.dev",
+    link: "https://laravel.jbantin.dev",
     gitLink: ["https://github.com/jbantin/Filar"],
   },
   {
