@@ -37,7 +37,7 @@ export const projects = [
   },
   {
     head: "Multiplayer (wasd/mouse)",
-    techs: ["JavaScript", "socket.io"],
+    techs: ["TypeScript", "socket.io"],
     description: [
       "Multiplayer top down shooter prototype with socket io in JavaScript",
     ],
